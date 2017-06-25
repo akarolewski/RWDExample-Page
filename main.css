@@ -1,0 +1,296 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  color: #37474F;
+  font-size: 1.6rem;
+}
+
+.page-header {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+
+.page-nav .hamburger {
+  border: 0;
+  background: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+}
+
+.page-nav .hamburger .fa-bars {
+  width: 18px;
+  height: 6px;
+}
+
+.page-nav .hamburger .fa-times {
+  display: none;
+  width: 18px;
+  height: 6px;
+}
+
+.page-nav .navigation-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.page-nav .navigation-menu li {
+  border-bottom: 1px solid #F5F7F8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.page-nav .navigation-menu li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.page-nav .navigation-menu li.sign-in {
+  margin-top: 25px;
+  border: 0;
+}
+.page-nav .navigation-menu li.sign-in a {
+  border: 2px solid #00BAA5;
+  border-radius: 25px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.page-header.nav-opened {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px -1px 26px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 26px 3px rgba(0,0,0,0.75);
+box-shadow: 0px -1px 26px 3px rgba(0,0,0,0.75);
+}
+
+.page-header.nav-opened .page-logo{
+  fill: #000000;
+}
+.page-header.nav-opened .page-nav .hamburger{
+  color: #000000;
+}
+
+.page-header.nav-opened .page-nav .hamburger .fa-bars {
+  display: none;
+}
+
+.page-header.nav-opened .page-nav .hamburger .fa-times {
+  display: inline-block;
+}
+
+.page-header.nav-opened .navigation-menu {
+  display: block;
+}
+.page-logo {
+  fill: #FFFFFF;
+  width: 100%;
+}
+
+.article .article-header {
+  background: url(images/deer.jpg) no-repeat;
+  background-size: cover;
+  background-position: 70%;
+  padding-top: 100px;
+  color: #FFFFFF;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.article-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 3.5rem;
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.article-lead {
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin: 20px;
+}
+
+.article-author-name {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.article-author-name::after {
+  content: "\00b7";
+  display: block;
+  font-size: 2rem;
+}
+
+.article-date {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.article-author-photo {
+  max-width: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.article-container {
+  margin-top: 0;
+  padding: 30px;
+  line-height: 2.6rem;
+}
+
+figcaption {
+  text-align: center;
+  color: #817e80;
+  font-style: oblique;
+  font-size: 1.2rem;
+}
+
+.article-sidebar {
+  margin: 0;
+  left: 0;
+  border-top: 1px solid #CBD3D7;
+  border-bottom: 1px solid #CBD3D7;
+  padding-top: 82px;
+  padding-bottom: 82px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.article-sidebar .article-picture img {
+  text-align: center;
+  width: 100%;
+}
+
+main article .last-paragraph {
+  padding-bottom: 60px;
+}
+
+footer {
+  background-color: #F5F7F8;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #00BFA5;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 40em) {
+  .page-header {
+    max-width: 1020px;
+    padding-top: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .page-nav .hamburger {
+    display: none;
+  }
+
+  .page-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .page-nav .navigation-menu {
+    display: block;
+  }
+
+  .page-nav .navigation-menu li {
+    display: inline-block;
+    border: 0;
+    margin-right: 48px;
+  }
+
+  .page-nav .navigation-menu li:last-child {
+    margin: 0;
+  }
+
+  .page-nav .navigation-menu li a {
+    color: #000000;
+    font-weight: bold;
+  }
+  .article .article-header {
+    padding-top: 150px;
+    background-position: 80%;
+  }
+  .article .article-header {
+    background: url(images/stag.jpg) no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    padding-top: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
+
+  .article-container {
+    max-width: 1020px;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .article-container p {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  figure {
+    max-width: 800px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .article-lead {
+    padding-bottom: 100px;
+  }
+}
